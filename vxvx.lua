@@ -41,9 +41,9 @@ else
      task.wait()
      vxvx['vxvv'] = vxvx['vxvv'] + 1
      writefile('vxvx/data/vxvx.json',game:GetService("HttpService"):JSONEncode(vxvx))
-end
 syn.queue_on_teleport(GetURL('vxvx.lua'))
 repeat
 game:GetService('TeleportService'):Teleport(game.PlaceId)    
 task.wait()
 until nil
+end
