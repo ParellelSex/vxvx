@@ -28,9 +28,9 @@ else
      for i,v in next, plr:WaitForChild('Backpack'):GetChildren() do
         if v:IsA("Tool") then
                 v.Parent = char
+            repeat task.wait() until v.Parent == char
         end
      end
-     repeat task.wait() until v.Parent == char
      for i,v in next, char:GetChildren() do
         if v:IsA("Tool") then
                 v.Parent = workspace
@@ -38,7 +38,7 @@ else
      end
      task.wait()
      vxvx['vxvv'] = vxvx['vxvv'] + 1
-     writefile('vxvx',game:GetService("HttpService"):JSONEncode(vxvx))
+     writefile('vxvx/data/vxvx.json',game:GetService("HttpService"):JSONEncode(vxvx))
 end
 syn.queue_on_teleport(GetURL('vxvx.lua'))
 repeat
