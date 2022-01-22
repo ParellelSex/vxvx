@@ -22,6 +22,9 @@ if vxvx['vxvv'] >= vxvx['vxvx'] then
                         char:FindFirstChild('Humanoid'):EquipTool(v)
                 end
         end
+     vxvx['vxvx'] = 0
+     vxvx['vxvv'] = 0
+     writefile('vxvx/data/vxvx.json',game:GetService("HttpService"):JSONEncode(vxvx))
     return
 else
      task.wait()
