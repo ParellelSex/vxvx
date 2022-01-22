@@ -13,7 +13,7 @@ end
 
 local plr = game:GetService('Players').LocalPlayer
 local char = plr.Character
-local file = readfile('vxvx')
+local file = readfile('vxvx/data/vxvx.json')
 local vxvx = game:GetService('HttpService'):JSONDecode(file)
 if vxvx['vxvv'] >= vxvx['vxvx'] then
         task.wait()
