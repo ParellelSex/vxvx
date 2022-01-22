@@ -22,9 +22,6 @@ if vxvx['vxvv'] >= vxvx['vxvx'] then
                         char:FindFirstChild('Humanoid'):EquipTool(v)
                 end
         end
-     vxvx['vxvx'] = 0
-     vxvx['vxvv'] = 0
-     writefile('vxvx/data/vxvx.json',game:GetService("HttpService"):JSONEncode(vxvx))
     return
 else
      task.wait()
@@ -44,9 +41,9 @@ else
      task.wait()
      vxvx['vxvv'] = vxvx['vxvv'] + 1
      writefile('vxvx/data/vxvx.json',game:GetService("HttpService"):JSONEncode(vxvx))
+end
 syn.queue_on_teleport(GetURL('vxvx.lua'))
 repeat
 game:GetService('TeleportService'):Teleport(game.PlaceId)    
 task.wait()
 until nil
-end
