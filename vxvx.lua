@@ -22,6 +22,7 @@ if vxvx['vxvv'] >= vxvx['vxvx'] then
                         char:FindFirstChild('Humanoid'):EquipTool(v)
                 end
         end
+    return
 else
      task.wait()
      char:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(0,9e9,0)
