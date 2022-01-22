@@ -26,7 +26,7 @@ if vxvx['vxvv'] >= vxvx['vxvx'] then
 else
      task.wait()
      char:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(0,9e9,0)
-     repeat task.wait() until char:FindFirstChild('HumanoidRootPart').CFrame == CFrame.new(0,9e9,0)
+     wait(0.015)
      for i,v in next, plr:WaitForChild('Backpack'):GetChildren() do
         if v:IsA("Tool") then
                 v.Parent = char
